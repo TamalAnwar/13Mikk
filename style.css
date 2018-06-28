@@ -1,0 +1,90 @@
+/* Resetting the browser default styles  */
+@import '/css/normalize.css';
+/* Google font for main body  */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/* Essential layout trick  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+
+}
+
+h1,
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Making the images fit  */
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+/* The main wrapper  */
+.wrapper {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header section  */
+.header-area {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.header-inner {
+  background-color: #ffffff;
+}
+
+#site-title {
+  font-size: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#site-issue {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+/* Article section  */
+.article-area {
+  padding: 50px 0;
+}
+
+
+.article {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-gap: 20px;
+  padding: 20px;
+  border-bottom: 2px solid #dddddd;
+}
+
+/* Removing the default margins and then adding my own  */
+.meta,
+.title,
+.description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 0.9rem;
+}
+
+.meta .category {
+  font-weight: bold;
+  color: red;
+}
